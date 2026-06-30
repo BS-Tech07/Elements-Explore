@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Elements Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .about-container{
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: rgba(255,255,255,0.05);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        color: #e0e0e0;
+       }
+
+       h1{
+        color: #3498db;
+        margin-bottom: 20px;
+       }
+       h2{
+        color: #fff;
+        margin-top: 30px;
+        border-left: 4px solid #3498db;
+        padding-left: 10px ;
+       }
+       ul{
+        list-style-type: none;
+        padding: 0;
+       }
+       ul li{
+        margin: 10px 0;
+        padding-left: 20px;
+        position: relative;
+
+       }
+        ul li::before {
+             content: "⚛";
+         position: absolute;
+          left: 0; 
+          color: #3498db; 
+        }
+      
+       .tech-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+        margin-top: 20px;
+       }
+       .tech-card{
+        background: rgba(0,0,0,0.3);
+        padding: 15px;
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body style="background-color: #0f0f0f; font-family: sans-serif;">
+
+    <header class="main-header">
+        <div class="logo">⚛️ Elements<b>Explorer</b></div>
+        <nav class="nav-links">
+            <a href="index.html">Back to Periodic Table</a>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <h1>About Elements Explorer</h1>
+        <p>Elements Explorer ek modern aur interactive periodic table hai 
+            jo chemistry ko seekhne aur samajhne ka ek naya nazariya deta hai.
+             Humne is project ko design kiya hai taaki students, teachers, aur science enthusiasts aasani
+              se elements ke baare mein jaankari paa sakein.
+            </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Interactive Filtering:</strong> Ek click mein metals, non-metals, aur gases ko alag karke dekhein.</li>
+            <li><strong>Instant Search:</strong> Kisi bhi element ko uske symbol, atomic number, ya naam se turant search karein.</li>
+            <li><strong>Detailed Data:</strong> Har element ke atomic mass, configuration, aur discovery ki complete history.</li>
+            <li><strong>3D Visuals:</strong> Atoms ko 3D mein explore karne ki suvidha.</li>
+            <li><strong>Modern Interface:</strong> Dark mode aur responsive design.</li>
+        </ul>
+
+        <h2>Technical Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-card"><strong>Frontend:</strong> HTML5, CSS3 , JavaScript </div>
+            <div class="tech-card"><strong>Data Handling:</strong> JSON Processing & Fetch API</div>
+            <div class="tech-card"><strong>3D Integration:</strong> &lt;model-viewer&gt; for Atomic Models</div>
+            <div class="tech-card"><strong>UI/UX:</strong> Responsive Grid & Fluid Layouts</div>
+        </div>
+    </div>
+
+   <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>Elements <span>Explorer</span></h2>
+            <p>Exploring the bulding blocks of the universe, one element at a time.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Periodic  Table</a>
+            <a href="about.html">About Tbale </a>
+    </div>
+    </div>
+    <div class="footer-copyright">
+        &copy;2026 Elements Explorer. | Designed for the Future of chemistry.
+    </div>
+   </footer>
+</body>
+</html>
